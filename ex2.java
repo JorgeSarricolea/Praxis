@@ -8,7 +8,7 @@
  * d) Desplegar los resultados hallados
  */
 
- import java.util.Scanner;
+import java.util.Scanner;
 
 public class ex2 {
 

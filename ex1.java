@@ -9,10 +9,10 @@ import java.util.Scanner;
  * main.
  */
 
- public class Practica {
+ public class ex1 {
     private int[] numeros;
 
-    public Practica(int[] numeros) {
+    public ex1(int[] numeros) {
         this.numeros = numeros;
     }
 
@@ -71,7 +71,7 @@ public static void main(String[] args) {
         numeros[i] = sc.nextInt();
     }
 
-    Practica practica = new Practica(numeros);
+    ex1 practica = new ex1(numeros);
     practica.mostrarResultados();
     sc.close();
     }
