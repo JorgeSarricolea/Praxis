@@ -71,6 +71,9 @@ public class ex2 {
                 System.out.println("Debes seleccionar una de las opciones escribiéndo el número:\n1. Sistemas\n2. Administración\n3. Civil");
                 System.out.print("Carrera: ");
                 carreras[i] = sc.nextInt();
+                if(carreras[i] < 1 || carreras[i] > 3){
+                    System.out.println("¡ERROR!");
+                }
             }while(carreras[i] < 1 || carreras[i] > 3);
             System.out.print("Semestre: ");
             semestres[i] = sc.nextInt();
