@@ -28,8 +28,8 @@ public class ex2 {
         int administracion = contarAlumnosPorCarrera(2);
         int civil = contarAlumnosPorCarrera(3);
 
-        System.out.println("-------------------------------------");
-        System.out.println("Número de alumnos por carrera");
+        System.out.println("\n-------------------------------------\n");
+        System.out.println("Número de alumnos por carrera:\n");
         System.out.println("Alumnos de Sistemas: " + sistemas);
         System.out.println("Alumnos de Administracion: " + administracion);
         System.out.println("Alumnos de Civil: " + civil);
@@ -38,11 +38,20 @@ public class ex2 {
         int[] vocales = contarVocalesPorNombre();
 
         // Desplegar los resultados hallados
-        System.out.println("-------------------------------------");
-        System.out.println("Resultados:");
+        System.out.println("\n-------------------------------------\n");
+        System.out.println("Resultados:\n");
         for (int i = 0; i < n; i++) {
             System.out.println("Nombre: " + nombres[i]);
-            System.out.println("Carrera: " + carreras[i]);
+
+            if(carreras[i] == 1){
+                System.out.println("Carrera: Sistemas");
+            }
+            if(carreras[i] == 2){
+                System.out.println("Carrera: Administración");
+            }
+            if(carreras[i] == 3){
+                System.out.println("Carrera: Civíl");
+            }
             System.out.println("Semestre: " + semestres[i]);
             System.out.println("Promedio: " + promedios[i]);
             System.out.println("Vocales en el nombre: " + vocales[i]);
@@ -63,22 +72,37 @@ public class ex2 {
         promedios = new double[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.println("-------------------------------------");
-            System.out.println("Ingrese los datos del alumno " + (i + 1) + ":");
-            System.out.print("Nombre: ");
-            nombres[i] = sc.next();
+            do {
+                System.out.print("Nombre: ");
+                nombres[i] = sc.next();
+                if (nombres[i].matches("[a-zA-Z ]+")) {
+                    break;
+                }else{
+                    System.out.println("¡ERROR!\nLa entrada no es una cadena válida. Intente nuevamente.");
+                }
+            } while (true);
             do{
-                System.out.println("Debes seleccionar una de las opciones escribiéndo el número:\n1. Sistemas\n2. Administración\n3. Civil");
+                System.out.println("Selecciona una de las opciones escribiéndo el número:\n1. Sistemas\n2. Administración\n3. Civil");
                 System.out.print("Carrera: ");
                 carreras[i] = sc.nextInt();
                 if(carreras[i] < 1 || carreras[i] > 3){
-                    System.out.println("¡ERROR!");
+                    System.out.println("\n¡ERROR!");
                 }
             }while(carreras[i] < 1 || carreras[i] > 3);
-            System.out.print("Semestre: ");
-            semestres[i] = sc.nextInt();
-            System.out.print("Promedio: ");
-            promedios[i] = sc.nextDouble();
+            do{
+                System.out.print("Semestre: ");
+                semestres[i] = sc.nextInt();
+                if(semestres[i] < 1 || semestres[i] > 12){
+                    System.out.println("\n¡ERROR!\nSemestre no válido.");
+                }
+            }while(semestres[i] < 1 || semestres[i] > 12);
+            do{
+                System.out.print("Promedio: ");
+                promedios[i] = sc.nextDouble();
+                if(promedios[i] < 0 || promedios[i] > 100){
+                    System.out.println("\n¡ERROR!\nPromedio no válido.");
+                }
+            }while(promedios[i] < 0 || promedios[i] > 100);
         }
     }
 
