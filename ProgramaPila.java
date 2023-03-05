@@ -19,7 +19,7 @@ public class ProgramaPila {
 
             switch (opcion) {
                 case 1:
-                    System.out.println("\nIngrese el elemento que desea agregar:");
+                    System.out.print("\nIngrese el elemento que desea agregar: ");
                     int elemento = scanner.nextInt();
                     pila.push(elemento);
                     break;
@@ -36,7 +36,7 @@ public class ProgramaPila {
                     }
                     break;
                 case 4:
-                    System.out.println("\nEstado completo de la pila:");
+                    System.out.println("\nEstado completo de la pila:\n");
                     pila.mostrarEstadoCompleto();
                     break;
                 case 5:
