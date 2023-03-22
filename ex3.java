@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class ex3 {
-    
-    int numerador, denominador; 
+
+    int numerador, denominador;
     public ex3(){
 
     }
@@ -37,10 +37,10 @@ public class ex3 {
                 int numerador = sc.nextInt();
                 System.out.print("Denominador: ");
                 int denominador = sc.nextInt();
-                
+
                 fracciones[i] = new ex3(numerador, denominador); // crear objeto fracción y almacenarlo en el arreglo
             }
-            
+
             // sumar las fracciones
             ex3 resultado = fracciones[0];
             for (int i = 1; i < n; i++) {
@@ -49,16 +49,16 @@ public class ex3 {
             // mostrar el resultado
             System.out.println("\n-------------------------------------\n");
             System.out.println("El resultado es:\n");
-            System.out.print(resultado.numerador); 
+            System.out.print(resultado.numerador);
             System.out.print("\n--\n");
             System.out.print( resultado.denominador + "\n");
 
-            
             }else{
                 System.out.println("¡ERROR!\nNo se permiten números negativos o '0' para esta solicitud.");
             }
 
             break;
         }while(true);
+        sc.close();
     }
 }

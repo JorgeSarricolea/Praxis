@@ -47,6 +47,7 @@ public class ProgramaPila {
                     System.out.println("\nLa opción ingresada no es válida. Por favor intenta de nuevo.");
                     break;
             }
+        scanner.close();
         }
     }
 }
