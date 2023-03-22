@@ -1,6 +1,11 @@
+/* Elabora una clase que utilice un arreglo unidimensional, lea N números y realice lo siguiente: a)
+almacene los números ascendentemente, b) almacene los números descendentemente, c) almacene
+los números pares, d) almacene los números impares, e) desplegar los resultados obtenidos.
+ */
+
 import java.util.Scanner;
 
-public class EjercicioArreglos {
+public class ArraysSort {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -90,5 +95,6 @@ public class EjercicioArreglos {
             System.out.print(impares[i] + " ");
         }
         System.out.println();
+        sc.close();
     }
 }
