@@ -1,3 +1,8 @@
+/* Se proporcionan N nombres que se encuentran cada uno en un arreglo de objetos String. Se
+desea: a) imprimir el nombre en mayúsculas, b) imprimir el nombre en minúsculas, c) cambiar las
+vocales de cada nombre por “X”, d) cambiar los espacios en blanco por “+”, e) imprimir cada una de
+las respuestas halladas. */
+
 import java.util.Arrays;
 
 public class namesVocalsX {

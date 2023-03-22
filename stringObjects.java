@@ -1,3 +1,9 @@
+/* Declarar un arreglo de objetos String, cuyo contenido sean las cadenas: “Hola mundo”,
+“Programación”, “Estudiantes” y “Flojos”. Realizar: a) ordenar ascendentemente cada cadena
+considerando las mayúsculas y minúsculas, b) ordenar descendentemente cada cadena sin importar
+mayúsculas y minúsculas, c) determinar cuál es la cadena más grande y cuál es la más pequeña, d)
+imprimir los resultados. */
+
 import java.util.Arrays;
 
 public class stringObjects {

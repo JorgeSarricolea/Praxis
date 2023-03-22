@@ -1,3 +1,8 @@
+/* Elabora una clase que genere un arreglo para N números, cada uno de los cuales debe estar
+entre 10 y 100 inclusive. A medida que se lea cada número, solo se pondrá en el arreglo si no es un
+duplicado de un número que ya se haya leído. Considerar el caso de que los N números son
+diferentes. */
+
 import java.util.*;
 
 public class UniqueNumbers {
