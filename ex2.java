@@ -104,6 +104,7 @@ public class ex2 {
                 }
             }while(promedios[i] < 0 || promedios[i] > 100);
         }
+        sc.close();
     }
 
     public static int contarAlumnosPorCarrera(int carrera) {
