@@ -141,6 +141,22 @@ public class BinaryTree {
         }
     }
 
+    public void printTree() {
+        printTree(root, 0);
+    }
+
+    private void printTree(Node current, int level) {
+        if (current == null) {
+            return;
+        }
+        printTree(current.right, level + 1);
+        for (int i = 0; i < level; i++) {
+            System.out.print("   ");
+        }
+        System.out.println(current.data);
+        printTree(current.left, level + 1);
+    }
+
     public static void main(String[] args) {
         BinaryTree binaryTree = new BinaryTree();
         while (true) {
@@ -160,6 +176,7 @@ public class BinaryTree {
             switch (choice) {
                 case 1:
                     binaryTree.create();
+                    binaryTree.printTree();
                     break;
                 case 2:
                     binaryTree.insert();
@@ -177,6 +194,9 @@ public class BinaryTree {
                     binaryTree.postOrderTraversal();
                     break;
                 case 7:
+                    binaryTree.printTree();
+                    break;
+                case 8:
                     System.exit(0);
                 default:
                     System.out.println("Invalid choice!");
