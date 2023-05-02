@@ -180,18 +180,23 @@ public class BinaryTree {
                     break;
                 case 2:
                     binaryTree.insert();
+                    binaryTree.printTree();
                     break;
                 case 3:
                     binaryTree.delete();
+                    binaryTree.printTree();
                     break;
                 case 4:
                     binaryTree.preOrderTraversal();
+                    binaryTree.printTree();
                     break;
                 case 5:
                     binaryTree.inOrderTraversal();
+                    binaryTree.printTree();
                     break;
                 case 6:
                     binaryTree.postOrderTraversal();
+                    binaryTree.printTree();
                     break;
                 case 7:
                     binaryTree.printTree();
