@@ -1,4 +1,4 @@
-// This is a little project in my POO Subject, it's contains the main class "UsaDerivada" and the "Herramientas" package
+// This is a little project in my POO Subject, it's contains the main class "UsaDerivada" and the "Herramientas" package.
 
 import Herramientas.Derivada;
 import Herramientas.Base;
