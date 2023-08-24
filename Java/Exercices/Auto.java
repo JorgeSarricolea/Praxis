@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.*;
 
-// NOTA: El archivo solo va a solicitar un arreglo de objetos, se puede modificar en la línea 263
+// NOTA: El archivo solo va a solicitar un arreglo de objetos, se puede modificar en la línea 368
 
 /* Elabora una clase llamada Auto, cuyos atributos son: tipo de auto(cadena),
     número de puertas(entero), número de cilindros(entero), modelo(cadena),
@@ -324,6 +324,31 @@ public class Auto {
             int cantidadDeLujo = getCantidadAutosPorTamaño(autos, 4);
             float promedioImpuestos = getPromedioImpuestos(autos);
 
+            /*
+             * Esta sección comentada corresponde a la actualización del inciso d
+             * Modificar de acuerdo a la necesidad de uso
+             */
+
+            /*
+             * // Aplicar modificaciones al precio mayor
+             * if (precioMayor >= 1 && precioMayor <= 10000) {
+             * precioMayor = 5000;
+             * }
+             * 
+             * // Aplicar modificaciones al precio menor
+             * if (precioMenor >= 0 && precioMenor <= 500) {
+             * precioMenor = 500;
+             * }
+             * 
+             * // Aplicar modificaciones a la cantidad de autos compactos y medianos
+             * if (cantidadCompactos + cantidadMedianos > 1) {
+             * cantidadCompactos = 5;
+             * }
+             * 
+             * // Aplicar modificaciones al promedio de impuestos
+             * promedioImpuestos = 55;
+             */
+
             escritor.println("Precio mayor: " + precioMayor);
             escritor.println("Precio menor: " + precioMenor);
             escritor.println("Cantidad de autos compactos: " + cantidadCompactos);
@@ -340,7 +365,7 @@ public class Auto {
     }
 
     public static void main(String[] args) {
-        // Ejemplo de uso
+        // Ejemplo de uso, NOTA: Se puede modificar la cantidad de autos
         Auto[] autos = Auto.leerAutos(1);
 
         // Generar archivo binario
