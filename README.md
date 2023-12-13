@@ -1,5 +1,5 @@
 # Praxis
-Those are some algorithms I've been practice in Java and Python.
+Let's practice Java and Python.
 
 ## Description
 If you are my classmate in programming, you will love this repository. Here, you can find several exercises in Java and Python that we have done in courses such as Object Oriented Programming, Operating Systems, Data Structures, and other subjects of the major.
