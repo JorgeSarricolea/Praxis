@@ -25,7 +25,8 @@ To get started with "Praxis", follow these simple steps:
 
 ### Prerequisites
 
-> [!IMPORTANT] > **Java & Python:** Ensure that you have Java and Python installed on your system.
+> [!IMPORTANT]
+> **Java & Python:** Ensure that you have Java and Python installed on your system.
 
 ### Installation
 
